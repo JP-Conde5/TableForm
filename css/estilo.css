@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+:root{
+    --p: aqua;
+    --s: lightblue;
+    --t: gray;
+    --preto: black;
+}
+
+body{
+    background-color: var(--t);
+}
+table{
+    border-collapse: collapse;
+}
+table tr th, table tr td{
+    border: 0.1rem solid var(--preto);
+    background-color: var(--p);
+    height: 2rem;
+    width: 2rem;
+}
+table tr th, table tr td:hover{
+    background-color: var(--s);
+}
