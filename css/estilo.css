@@ -1,26 +1,111 @@
 *{
     box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
 }
 
 :root{
     --p: aqua;
     --s: lightblue;
     --t: gray;
+    --q: rgb(6, 193, 255);
     --preto: black;
+    --branco: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    background-color: var(--q);
+    height: 5rem; 
+    border-bottom: 0.5rem solid var(--t);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+header ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    align-items: center;
+    list-style-type: none;
+}
+
+header ul li a{
+    padding: 1rem;
+    color: var(--branco);
+    text-decoration: none;
+    width: 100%;
+}
+
+header ul li a:hover{
+    background-color: var(--t);
 }
 
 body{
-    background-color: var(--t);
+    background-color: var(--preto);
+    color: var(--branco);
 }
+
+.main{
+    min-height: calc(100vh - 7rem);
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    min-height: calc(100vh - 7rem);
+}
+
+.form form{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.anc section a{
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.anc section a:hover{
+    color: var(--p);
+}
+
+.p{
+    padding-top: 2rem;
+}
+
 table{
+    width: 80%;
     border-collapse: collapse;
+    color: var(--preto);
 }
+
 table tr th, table tr td{
-    border: 0.1rem solid var(--preto);
+    border: 0.1rem solid var(--branco);
     background-color: var(--p);
     height: 2rem;
     width: 2rem;
+    text-align: center;
 }
+
 table tr th, table tr td:hover{
     background-color: var(--s);
+}
+
+section{
+    height: 100vh;
+}
+
+footer{
+    height: 2rem;
+    background-color: var(--q);
+    position: fixed; 
+    width: 100%;  
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    padding-left: 1rem;
 }
